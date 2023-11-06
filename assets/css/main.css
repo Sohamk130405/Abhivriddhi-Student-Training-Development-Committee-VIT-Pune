@@ -723,6 +723,57 @@ section {
   background-color: var(--color-primary);
 }
 
+/* Change start*/
+.page2{
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+
+}
+
+.scroller{
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 10;
+
+}
+
+.scroller::-webkit-scrollbar{
+  display: none;
+}
+.scroller-in{
+  white-space: nowrap;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  animation: scroll 20s  linear  ;
+  animation-iteration-count: infinite;
+  transition: all linear 0.5s;
+  
+}
+
+.scroller img{
+ 
+  height: 100px;
+  width:100px;
+  margin-right: 20px; 
+}
+
+
+@keyframes scroll {
+  from{
+      transform: translateX(15%);
+  }
+
+  to{
+      transform: translateX(-150%);
+  }
+ 
+}
+/* Change end */
+
 
 /*--------------------------------------------------------------
 # Stats Counter Section
