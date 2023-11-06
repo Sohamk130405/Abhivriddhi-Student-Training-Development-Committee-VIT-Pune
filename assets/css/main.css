@@ -735,6 +735,8 @@ section {
 .stats-counter .stats-item {
   padding: 20px 0;
   border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  justify-content: space-between;
 }
 
 .stats-counter .stats-item .purecounter {
